@@ -33,8 +33,9 @@ namespace Abc.Soft
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
             services.AddScoped<IMeasureRepository, MeasureRepository>();
+            services.AddScoped<IUnitsRepository, UnitsRepository>();
 
-    }
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
