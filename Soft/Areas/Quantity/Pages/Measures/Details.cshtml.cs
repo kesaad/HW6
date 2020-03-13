@@ -14,9 +14,7 @@ namespace Abc.Soft.Areas.Quantity.Pages.Measures
 
         public async Task<IActionResult> OnGetAsync(string id)
         {
-            var o = await db.Get(id);
-
-            Item = MeasureViewFactory.Create(o);
+            await getObject(id);
             return Page();
         }
     }
