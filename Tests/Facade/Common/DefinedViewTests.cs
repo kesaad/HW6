@@ -6,7 +6,7 @@ namespace Abc.Tests.Facade.Common
 {
 
     [TestClass]
-    public class DefinedViewTests : AbstractClassTest<DefinedView, NamedView>
+    public class DefinedViewTests : AbstractClassTests<DefinedView, NamedView>
     {
         private class testClass: DefinedView { }
 

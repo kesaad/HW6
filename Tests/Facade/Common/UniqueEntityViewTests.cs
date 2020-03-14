@@ -6,7 +6,7 @@ namespace Abc.Tests.Facade.Common
 {
 
     [TestClass]
-    public class UniqueEntityViewTests : AbstractClassTest<UniqueEntityView,PeriodView>
+    public class UniqueEntityViewTests : AbstractClassTests<UniqueEntityView,PeriodView>
     {
         private class testClass : UniqueEntityView { }
 

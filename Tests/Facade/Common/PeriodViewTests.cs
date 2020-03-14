@@ -6,7 +6,7 @@ namespace Abc.Tests.Facade.Common
 {
 
     [TestClass]
-    public class PeriodViewTests : AbstractClassTest<PeriodView, object>
+    public class PeriodViewTests : AbstractClassTests<PeriodView, object>
     {
         private class testClass : PeriodView { }
 
