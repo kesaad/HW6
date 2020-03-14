@@ -34,8 +34,4 @@
     <Folder Include="Areas\Quantity\Pages\Units\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Remove="Areas\Quantity\Pages\Units\Edit.cshtml" />
-    <Content Remove="Areas\Quantity\Pages\Units\Index.cshtml" />
-  </ItemGroup>
 </Project>
