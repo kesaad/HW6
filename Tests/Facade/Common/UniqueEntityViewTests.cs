@@ -1,0 +1,26 @@
+using Abc.Facade.Common;
+using Abc.Facade.Quantity;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace Abc.Tests.Facade.Common
+{
+
+    [TestClass]
+    public class UniqueEntityViewTests : AbstractClassTest<UniqueEntityView,PeriodView>
+    {
+        private class testClass : UniqueEntityView { }
+
+        [TestInitialize]
+        public override void TestInitialize()
+        {
+            base.TestInitialize();
+            obj = new testClass();
+        }
+        [TestMethod]
+        public void IdTest()
+        {
+            isNullableProperty(() => obj.Id, x => obj.Id = x);
+        }
+    }
+
+}

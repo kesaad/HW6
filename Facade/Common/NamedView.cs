@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Abc.Facade.Quantity;
 
-namespace Abc.Facade.Quantity
+namespace Abc.Facade.Common
 {
     public abstract class NamedView : UniqueEntityView
     {

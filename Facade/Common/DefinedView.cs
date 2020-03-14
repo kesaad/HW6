@@ -1,4 +1,6 @@
-﻿namespace Abc.Facade.Quantity
+﻿using Abc.Facade.Quantity;
+
+namespace Abc.Facade.Common
 {
     public abstract class DefinedView : NamedView
     {
