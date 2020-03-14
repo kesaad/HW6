@@ -35,8 +35,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="Areas\Quantity\Pages\Units\Delete.cshtml" />
-    <Content Remove="Areas\Quantity\Pages\Units\Details.cshtml" />
     <Content Remove="Areas\Quantity\Pages\Units\Edit.cshtml" />
     <Content Remove="Areas\Quantity\Pages\Units\Index.cshtml" />
   </ItemGroup>
