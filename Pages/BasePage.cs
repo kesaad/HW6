@@ -33,7 +33,7 @@ namespace Abc.Pages
             return string.Empty;
         }
 
-        public string FixedFilter { get => db.FixedFilter; set => FixedFilter = value; }
+        public string FixedFilter { get => db.FixedFilter; set => db.FixedFilter = value; }
         public string FixedValue { get => db.FixedValue; set => db.FixedValue = value; }
 
         public string SortOrder { get => db.SortOrder; set => db.SortOrder = value; }
