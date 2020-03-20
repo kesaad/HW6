@@ -36,5 +36,8 @@
     <Folder Include="Facade\" />
     <Folder Include="Facade\Common\" />
     <Folder Include="Facade\Quantity\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Pages\Quantity\" />
+    <Folder Include="Pages\Extensions\" />
   </ItemGroup>
 </Project>
