@@ -26,6 +26,7 @@
     <ProjectReference Include="..\Infra\Infra.csproj" />
     <ProjectReference Include="..\Pages\Pages.csproj" />
     <ProjectReference Include="..\Soft\Soft.csproj" />
+    <ProjectReference Include="..\..\..\..\Desktop\Core\Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
