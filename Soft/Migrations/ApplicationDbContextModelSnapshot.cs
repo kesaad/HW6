@@ -41,6 +41,28 @@ namespace Abc.Soft.Migrations
                     b.ToTable("Measures");
                 });
 
+            modelBuilder.Entity("Abc.Data.Quantity.MeasureTermData", b =>
+                {
+                    b.Property<string>("MasterId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TermId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Power")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("ValidFrom")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("ValidTo")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("MasterId", "TermId");
+
+                    b.ToTable("MeasureTerms");
+                });
+
             modelBuilder.Entity("Abc.Data.Quantity.SystemOfUnitsData", b =>
                 {
                     b.Property<string>("Id")
@@ -114,6 +136,28 @@ namespace Abc.Soft.Migrations
                     b.HasKey("UnitId", "SystemOfUnitsId");
 
                     b.ToTable("UnitFactors");
+                });
+
+            modelBuilder.Entity("Abc.Data.Quantity.UnitTermData", b =>
+                {
+                    b.Property<string>("MasterId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TermId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Power")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("ValidFrom")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("ValidTo")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("MasterId", "TermId");
+
+                    b.ToTable("UnitTerms");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
