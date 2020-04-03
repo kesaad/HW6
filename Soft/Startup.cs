@@ -24,16 +24,20 @@ namespace Abc.Soft
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(
+                options.UseInMemoryDatabase(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDbContext<QuantityDbContext>(options =>
-                options.UseSqlite(
+                options.UseInMemoryDatabase(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
             services.AddScoped<IMeasuresRepository, MeasuresRepository>();
+            services.AddScoped<IUnitTermsRepository, UnitTermsRepository>();
+            services.AddScoped<IMeasureTermsRepository, MeasureTermsRepository>();
+            services.AddScoped<ISystemsOfUnitsRepository, SystemsOfUnitsRepository>();
             services.AddScoped<IUnitsRepository, UnitsRepository>();
+            services.AddScoped<IUnitFactorsRepository, UnitFactorsRepository>();
             services.AddServerSideBlazor();
 
         }
