@@ -28,7 +28,7 @@ namespace Abc.Pages.Quantity
 
         public IList<MeasureTermView> Terms { get; }
 
-        public void LoadDatails(MeasureView item)
+        public void LoadDetails(MeasureView item)
         {
             Terms.Clear();
 

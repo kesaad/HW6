@@ -33,7 +33,7 @@
                 if (item.Id == Model.SelectedId)
                 {
                     selectedRow = "alert-success";
-                    Model.LoadDatails(item);
+                    Model.LoadDetails(item);
                 }
                 <tr class=@selectedRow>
                     @Html.TableRowWithSelectFor(
