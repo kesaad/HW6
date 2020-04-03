@@ -10,5 +10,10 @@ namespace Abc.Facade.Quantity
         [Required]
         [DisplayName("Measure")]
         public string MasterId { get; set; }
+
+        public string GetId()
+        {
+            return $"{MasterId}.{TermId}";
+        }
     }
 }
